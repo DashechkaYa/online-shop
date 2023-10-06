@@ -40,7 +40,7 @@
 
     <section class="filter-section">
       <form class="filter-section__filter-form filter-form" action="" method="">
-        <div class="filter-form__top">
+        <!-- <div class="filter-form__top">
           <label class="filter-form__filter-title filter-title" for="brand">Brand</label>
           <input class="filter-form__filter-input filter-input" type="checkbox" id="brand" name="brand">
           <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -49,114 +49,141 @@
               d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
               fill="#4F4F4F" />
           </svg>
+        </div> -->
+        <div class="filter-form__option">
+          <input class="filter-form__filter-input filter-input" type="checkbox" id="brand" name="brand">
+          <span class="filter-form__top filter-input__header">
+            <label class="filter-input__label" for="brand"></label>
+            <span class="filter-form__filter-title filter-title">Brand</span>
+            <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
+                fill="#4F4F4F" />
+            </svg>
+          </span>
+          <div class="filter-section__line"></div>
+          <div id="brand-content" class="filter-form__filter-option filter-option">
+            <label class="filter-option__label" for="adidas">
+              <input class="filter-option__input" type="checkbox" id="adidas" name="adidas">
+              <span class="filter-option__button">
+                <svg class="filter-option__icon" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Adidas</span>
+            </label>
+            <label class="filter-option__label" for="new-balance"><input class="filter-option__input" type="checkbox"
+                id="new-balance" name="new-balance"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">New Balance</span>
+            </label>
+            <label class="filter-option__label" for="nike"><input class="filter-option__input" type="checkbox" id="nike"
+                name="nike"><span class="filter-option__button"><svg class="filter-option__icon" viewBox="0 0 14 14"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Nike</span>
+            </label>
+            <label class="filter-option__label" for="puma"><input class="filter-option__input" type="checkbox" id="puma"
+                name="puma"><span class="filter-option__button"><svg class="filter-option__icon" viewBox="0 0 14 14"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Puma</span>
+            </label>
+            <label class="filter-option__label" for="reebok"><input class="filter-option__input" type="checkbox"
+                id="reebok" name="reebok"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Reebok</span>
+            </label>
+          </div>
         </div>
-        <div class="filter-section__line"></div>
-        <div class="filter-form__filter-option filter-option">
-          <label class="filter-option__label" for="adidas"><input class="filter-option__input" type="checkbox"
-              id="adidas" name="adidas"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">Adidas</span>
-          </label>
-          <label class="filter-option__label" for="new-balance"><input class="filter-option__input" type="checkbox"
-              id="new-balance" name="new-balance"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">New Balance</span>
-          </label>
-          <label class="filter-option__label" for="nike"><input class="filter-option__input" type="checkbox" id="nike"
-              name="nike"><span class="filter-option__button"><svg class="filter-option__icon" viewBox="0 0 14 14"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">Nike</span>
-          </label>
-          <label class="filter-option__label" for="puma"><input class="filter-option__input" type="checkbox" id="puma"
-              name="puma"><span class="filter-option__button"><svg class="filter-option__icon" viewBox="0 0 14 14"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">Puma</span>
-          </label>
-          <label class="filter-option__label" for="reebok"><input class="filter-option__input" type="checkbox"
-              id="reebok" name="reebok"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">Reebok</span>
-          </label>
-        </div>
-
-        <div class="filter-form__top">
-          <label class="filter-form__filter-title filter-title" for="price">Price</label>
+        <div class="filter-form__option">
           <input class="filter-form__filter-input filter-input" type="checkbox" id="price" name="price">
-          <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
-              fill="#4F4F4F" />
-          </svg>
+          <span class="filter-form__top filter-input__header">
+            <label class="filter-input__label" for="price"></label>
+            <span class="filter-form__filter-title filter-title">Price</span>
+            <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
+                fill="#4F4F4F" />
+            </svg>
+          </span>
+          <div class="filter-section__line"></div>
+          <div class="filter-form__filter-option filter-option">
+            <label class="filter-option__label" for="$-0-50"><input class="filter-option__input" type="checkbox"
+                id="$-0-50" name="$-0-50"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 0-50</span>
+            </label>
+            <label class="filter-option__label" for="$-50-100"><input class="filter-option__input" type="checkbox"
+                id="$-50-100" name="$-50-100"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 50-100</span>
+            </label>
+            <label class="filter-option__label" for="$-100-150"><input class="filter-option__input" type="checkbox"
+                id="$-100-150" name="$-100-150"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 100-150</span>
+            </label>
+            <label class="filter-option__label" for="$-150-200"><input class="filter-option__input" type="checkbox"
+                id="$-150-200" name="$-150-200"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 150-200</span>
+            </label>
+            <label class="filter-option__label" for="$-200-250"><input class="filter-option__input" type="checkbox"
+                id="$-200-250" name="$-200-250"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 200-250</span>
+            </label>
+            <label class="filter-option__label" for="$-250-300"><input class="filter-option__input" type="checkbox"
+                id="$-250-300" name="$-250-300"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 250-300</span>
+            </label>
+          </div>
         </div>
-        <div class="filter-section__line"></div>
-        <div class="filter-form__filter-option filter-option">
-          <label class="filter-option__label" for="$-0-50"><input class="filter-option__input" type="checkbox"
-              id="$-0-50" name="$-0-50"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">$ 0-50</span>
-          </label>
-          <label class="filter-option__label" for="$-50-100"><input class="filter-option__input" type="checkbox"
-              id="$-50-100" name="$-50-100"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">$ 50-100</span>
-          </label>
-          <label class="filter-option__label" for="$-100-150"><input class="filter-option__input" type="checkbox"
-              id="$-100-150" name="$-100-150"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">$ 100-150</span>
-          </label>
-          <label class="filter-option__label" for="$-150-200"><input class="filter-option__input" type="checkbox"
-              id="$-150-200" name="$-150-200"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">$ 150-200</span>
-          </label>
-          <label class="filter-option__label" for="$-200-250"><input class="filter-option__input" type="checkbox"
-              id="$-200-250" name="$-200-250"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">$ 200-250</span>
-          </label>
-          <label class="filter-option__label" for="$-250-300"><input class="filter-option__input" type="checkbox"
-              id="$-250-300" name="$-250-300"><span class="filter-option__button"><svg class="filter-option__icon"
-                viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
-              </svg></span>
-            <span class="filter-option__text">$ 250-300</span>
-          </label>
-        </div>
-
-        <div class="filter-form__top">
+        <div class="filter-form__option">
+        <input class="filter-form__filter-input filter-input" type="checkbox" id="size" name="size">
+          <span class="filter-form__top filter-input__header">
+            <label class="filter-input__label" for="size"></label>
+            <span class="filter-form__filter-title filter-title">Size</span>
+            <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
+                fill="#4F4F4F" />
+            </svg>
+          </span>
+        <!-- <div class="filter-form__top">
           <label class="filter-form__filter-title filter-title" for="price">Size</label>
           <input class="filter-form__filter-input filter-input" type="checkbox" id="size" name="size">
           <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -165,10 +192,11 @@
               d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
               fill="#4F4F4F" />
           </svg>
-        </div>
+        </div> -->
         <div class="filter-section__line"></div>
         <div class="filter-form__filter-option filter-option">
-          <label class="filter-option__label" for="40-size"><input class="filter-option__input" type="checkbox"
+          <label class="filter-option__label" for="40-size">
+            <input class="filter-option__input" type="checkbox"
               id="40-size" name="40-size"><span class="filter-option__button"><svg class="filter-option__icon"
                 viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -217,6 +245,7 @@
             <span class="filter-option__text">45 size</span>
           </label>
         </div>
+      </div>
       </form>
     </section>
 

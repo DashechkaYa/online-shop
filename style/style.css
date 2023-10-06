@@ -141,6 +141,15 @@ font-family: 'Rubik', sans-serif; */
   flex-wrap: wrap;
 }
 
+.filter-form__option {
+  width: 100%;
+  position: relative;
+}
+
+.filter-form__option:not(:last-of-type) {
+  margin-bottom: 5.6rem;
+}
+
 .filter-form__top {
   flex: 0 0 100%;
   display: flex;
@@ -168,9 +177,38 @@ font-family: 'Rubik', sans-serif; */
 
 .filter-input {
   position: absolute;
-  right: 0;
+  height: 0;
+  width: 0;
   z-index: -1;
   outline: none;
+}
+
+.filter-input:checked ~ .filter-option {
+  max-height: 400px;
+}
+
+.filter-input:checked ~ .filter-input__header .filter-arrow {
+  transform: rotateX(0);
+}
+
+.filter-input__header {
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-input:focus-visible ~ .filter-input__header {
+  outline: auto;
+}
+
+.filter-input__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .filter-form__filter-arrow {
@@ -184,42 +222,42 @@ font-family: 'Rubik', sans-serif; */
   height: 24px;
   fill: #4f4f4f;
   cursor: pointer;
+  transform: rotateX(180deg);
+  transition: transform 0.2s ease;
 }
 
-.filter-section__line {
-  background-color: #e0e0e0;
-  height: 1px;
-  flex: 0 0 100%;
-  margin-bottom: 2rem;
-}
-
-.filter-form__filter-option:not(:last-of-type) {
+/* .filter-form__filter-option:not(:last-of-type) {
   margin-bottom: 5.6rem;
-}
+} */
 
 .filter-option {
   background-color: #ffffff;
   flex: 0 0 100%;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition-property: padding-top max-height;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
-.filter-input:checked,
+/* FIXME: remove if not needed */
+/* .filter-input:checked,
 .filter-option {
   display: block;
-}
+} */
 
 .filter-option__label {
   display: block;
   cursor: pointer;
   position: relative;
-  margin-bottom: 1.6rem;
 }
 
-.filter-option__input {
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  outline: none;
+.filter-option__label:first-of-type {
+  margin-top: 2rem;
+}
+
+.filter-option__label:not(:last-of-type) {
+  margin-bottom: 1.6rem;
 }
 
 .filter-option__button {
@@ -230,6 +268,13 @@ font-family: 'Rubik', sans-serif; */
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.filter-option__input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  outline: none;
 }
 
 .filter-option__input:checked + .filter-option__button {
