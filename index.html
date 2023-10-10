@@ -13,27 +13,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Rubik:wght@500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
+  <style>
+    .header__basket:first-of-type {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <header class="header container">
-    <a class="logo" href="/"><img class="logo__item" src="img/running-shoes-logo.png" alt="running-shoes-logo"></a>
-    <nav class="navbar">
+    <div class="header__logo">
+      <a class="logo" href="/">
+        <img class="logo__item" src="img/running-shoes-logo.png" alt="running-shoes-logo">
+      </a>
+    </div>
+    <nav class="navbar header__navbar">
       <a class="navbar__link" href="">Home</a>
       <a class="navbar__link" href="">Shop</a>
       <a class="navbar__link" href="">About</a>
       <a class="navbar__link" href="">FAQ</a>
       <a class="navbar__link" href="">Contact</a>
     </nav>
-    <a class="basket-icon" href="#dialog"><svg class="basket-icon__item" viewBox="0 0 24 24" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M9.5822 21C10.1345 21 10.5822 20.5523 10.5822 20C10.5822 19.4477 10.1345 19 9.5822 19C9.02992 19 8.5822 19.4477 8.5822 20C8.5822 20.5523 9.02992 21 9.5822 21Z" />
-        <path
-          d="M20.0822 21C20.6345 21 21.0822 20.5523 21.0822 20C21.0822 19.4477 20.6345 19 20.0822 19C19.5299 19 19.0822 19.4477 19.0822 20C19.0822 20.5523 19.5299 21 20.0822 21Z" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M3.0822 2C2.52992 2 2.0822 2.44772 2.0822 3C2.0822 3.55228 2.52992 4 3.0822 4H5.26907L7.59935 15.1854C7.64375 15.4222 7.77164 15.6296 7.95129 15.7759C8.13112 15.9219 8.36026 16.0048 8.60118 16H20.2135C20.5315 16.0002 20.8398 15.8902 21.0858 15.6887C21.3318 15.4872 21.5003 15.2067 21.5628 14.8948C21.5646 14.8856 21.5663 14.8764 21.5679 14.8671L22.9767 6.62666C23.0128 6.43278 23.0068 6.23332 22.959 6.04185C22.9097 5.84438 22.8171 5.66032 22.6881 5.50297C22.559 5.34561 22.3966 5.21886 22.2126 5.13188C22.0288 5.045 21.828 4.99996 21.6247 5H7.52034L7.06118 2.79605C6.96457 2.33233 6.55588 2 6.0822 2H3.0822ZM7.93701 7L9.39534 14H19.6871L20.8839 7H7.93701Z" />
-      </svg></a>
+    <div class="header__basket">
+      <a class="basket-icon" href="#dialog">
+        <svg class="basket-icon__item" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.5822 21C10.1345 21 10.5822 20.5523 10.5822 20C10.5822 19.4477 10.1345 19 9.5822 19C9.02992 19 8.5822 19.4477 8.5822 20C8.5822 20.5523 9.02992 21 9.5822 21Z" />
+          <path
+            d="M20.0822 21C20.6345 21 21.0822 20.5523 21.0822 20C21.0822 19.4477 20.6345 19 20.0822 19C19.5299 19 19.0822 19.4477 19.0822 20C19.0822 20.5523 19.5299 21 20.0822 21Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.0822 2C2.52992 2 2.0822 2.44772 2.0822 3C2.0822 3.55228 2.52992 4 3.0822 4H5.26907L7.59935 15.1854C7.64375 15.4222 7.77164 15.6296 7.95129 15.7759C8.13112 15.9219 8.36026 16.0048 8.60118 16H20.2135C20.5315 16.0002 20.8398 15.8902 21.0858 15.6887C21.3318 15.4872 21.5003 15.2067 21.5628 14.8948C21.5646 14.8856 21.5663 14.8764 21.5679 14.8671L22.9767 6.62666C23.0128 6.43278 23.0068 6.23332 22.959 6.04185C22.9097 5.84438 22.8171 5.66032 22.6881 5.50297C22.559 5.34561 22.3966 5.21886 22.2126 5.13188C22.0288 5.045 21.828 4.99996 21.6247 5H7.52034L7.06118 2.79605C6.96457 2.33233 6.55588 2 6.0822 2H3.0822ZM7.93701 7L9.39534 14H19.6871L20.8839 7H7.93701Z" />
+        </svg>
+      </a>
+    </div>
 
     <dialog id="dialog" class="bascket-card__dialog">
       <div class="bascket-card">
@@ -268,7 +280,7 @@
       <article class="catalog-section__card card">
         <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-1.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-1.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike React Infinity Run Flyknit 3 Mens</h2>
             <p class="card__text">$159.00</p>
             <div class="card__rating rating">
@@ -408,9 +420,9 @@
       </dialog>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-2.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-2.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max 270 Flyknit Chaussure</h2>
             <p class="card__text">$169.00</p>
             <div class="card__rating rating">
@@ -428,9 +440,9 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-3.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-3.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Running | Femme Nike Air Max 27</h2>
             <p class="card__text">$159.00</p>
             <div class="card__rating rating">
@@ -448,9 +460,9 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-4.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-4.png" alt="sneackers-image"></div>
             <h2 class="Card__title">NIKE Revolution 5</h2>
             <p class="card__text">$159.00</p>
             <div class="card__rating rating">
@@ -468,9 +480,9 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-5.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-5.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike AIR MAX 2090 </h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
@@ -488,9 +500,9 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-6.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-6.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max 270 Bowfin</h2>
             <p class="card__text">$169.00</p>
             <div class="card__rating rating">
@@ -508,9 +520,9 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-7.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-7.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Blanc Air Max 270 Chaussures. Nike</h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
@@ -528,9 +540,9 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max Fury Men</h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
@@ -548,9 +560,9 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max Fury Men</h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
@@ -576,10 +588,13 @@
 
   <footer class="footer">
     <div class="container footer__wrapper">
-      <div class="footer__logo">
-        <div class="footer__logo--background"><a class="logo" href="/"><img class="logo__item"
-              src="img/running-shoes-logo.png" alt="running-shoes-logo"></div></a>
-      </div>
+      <a href="/" class="footer__logo">
+        <div class="footer__logo--background">
+          <div class="logo">
+            <img class="logo__item" src="img/running-shoes-logo.png" alt="running-shoes-logo">
+          </div>
+        </div>
+      </a>
       <div class="footer__contact">
         <h3 class="footer__title">Contact us</h3>
         <h3 class="footer__title">Wright us</h3>
