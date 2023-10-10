@@ -581,6 +581,12 @@ font-family: 'Rubik', sans-serif; */
   margin-bottom: 2.5rem;
 }
 
+.footer__contact:first-child,
+.footer__shop-category:first-child,
+.footer__useful-links:first-child {
+  margin-bottom: 3.8rem;
+}
+
 .footer__shop-category {
   display: flex;
   flex-direction: column;
