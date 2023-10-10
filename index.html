@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Rubik:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header container">
+    <a class="logo" href="/"><img class="logo__item" src="img/running-shoes-logo.png" alt="running-shoes-logo"></a>
+    <nav class="navbar">
+      <a class="navbar__link" href="">Home</a>
+      <a class="navbar__link" href="">Shop</a>
+      <a class="navbar__link" href="">About</a>
+      <a class="navbar__link" href="">FAQ</a>
+      <a class="navbar__link" href="">Contact</a>
+    </nav>
+    <a class="basket-icon" href="#dialog"><svg class="basket-icon__item" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M9.5822 21C10.1345 21 10.5822 20.5523 10.5822 20C10.5822 19.4477 10.1345 19 9.5822 19C9.02992 19 8.5822 19.4477 8.5822 20C8.5822 20.5523 9.02992 21 9.5822 21Z" />
+        <path
+          d="M20.0822 21C20.6345 21 21.0822 20.5523 21.0822 20C21.0822 19.4477 20.6345 19 20.0822 19C19.5299 19 19.0822 19.4477 19.0822 20C19.0822 20.5523 19.5299 21 20.0822 21Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.0822 2C2.52992 2 2.0822 2.44772 2.0822 3C2.0822 3.55228 2.52992 4 3.0822 4H5.26907L7.59935 15.1854C7.64375 15.4222 7.77164 15.6296 7.95129 15.7759C8.13112 15.9219 8.36026 16.0048 8.60118 16H20.2135C20.5315 16.0002 20.8398 15.8902 21.0858 15.6887C21.3318 15.4872 21.5003 15.2067 21.5628 14.8948C21.5646 14.8856 21.5663 14.8764 21.5679 14.8671L22.9767 6.62666C23.0128 6.43278 23.0068 6.23332 22.959 6.04185C22.9097 5.84438 22.8171 5.66032 22.6881 5.50297C22.559 5.34561 22.3966 5.21886 22.2126 5.13188C22.0288 5.045 21.828 4.99996 21.6247 5H7.52034L7.06118 2.79605C6.96457 2.33233 6.55588 2 6.0822 2H3.0822ZM7.93701 7L9.39534 14H19.6871L20.8839 7H7.93701Z" />
+      </svg></a>
+
+    <dialog id="dialog" class="bascket-card__dialog">
+      <div class="bascket-card">
+        <h2 class="bascket-card__title">Cart</h2>
+        <a class="bascket-card__close img-close" href="#!"><svg class="img-close__item" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12Z" />
+          </svg></a>
+        <div class="bascket-card__list">
+          <div class="bascket-card__item bascket-item">
+            <a class="bascket-item__img" href=""><img class="bascket-item__item" src="img/image-1.png"
+                alt="sneackers-image"></a>
+            <div class="bascket-item__description">
+              <a class="bascket-item__title" href="">
+                <h3>Nike React Infinity Run Flyknit 3 Mens</h3>
+              </a>
+              <p class="bascket-item__size">Size: 42</p>
+              <p class="bascket-card__price">$169.00</p>
+            </div>
+          </div>
+        </div>
+        <form class="bascket-card__form form" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </div>
+    </dialog>
+  </header>
+
+  <main class="main container">
+    <div class="main__top">
+      <h1 class="main__title">Products</h1>
+      <form class="main__search-form search-form" action="" method="">
+        <input class="search-form__search-input search-input" type="text">
+        <button class="search-form__search-button search-button" type="button"><img src="img/search-loupe.svg"
+            alt="search-loupe"></button>
+      </form>
+    </div>
+
+    <section class="filter-section">
+      <form class="filter-section__filter-form filter-form" action="" method="">
+        <div class="filter-form__item">
+          <input class="filter-form__filter-input filter-input" type="checkbox" id="brand" name="brand">
+          <div class="filter-form__top">
+            <label class="filter-input__label" for="brand"></label>
+            <span class="filter-form__filter-title filter-title">Brand</span>
+            <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
+                fill="#4F4F4F" />
+            </svg>
+          </div>
+          <div class="filter-section__line"></div>
+          <div class="filter-form__filter-option filter-option">
+            <label class="filter-option__label" for="adidas"><input class="filter-option__input" type="checkbox"
+                id="adidas" name="adidas"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Adidas</span>
+            </label>
+            <label class="filter-option__label" for="new-balance"><input class="filter-option__input" type="checkbox"
+                id="new-balance" name="new-balance"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">New Balance</span>
+            </label>
+            <label class="filter-option__label" for="nike"><input class="filter-option__input" type="checkbox" id="nike"
+                name="nike"><span class="filter-option__button"><svg class="filter-option__icon" viewBox="0 0 14 14"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Nike</span>
+            </label>
+            <label class="filter-option__label" for="puma"><input class="filter-option__input" type="checkbox" id="puma"
+                name="puma"><span class="filter-option__button"><svg class="filter-option__icon" viewBox="0 0 14 14"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Puma</span>
+            </label>
+            <label class="filter-option__label" for="reebok"><input class="filter-option__input" type="checkbox"
+                id="reebok" name="reebok"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">Reebok</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-form__item">
+          <input class="filter-form__filter-input filter-input" type="checkbox" id="price" name="price">
+          <div class="filter-form__top">
+            <label class="filter-input__label" for="price"></label>
+            <span class="filter-form__filter-title filter-title">Price</span>
+            <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
+                fill="#4F4F4F" />
+            </svg>
+          </div>
+          <div class="filter-section__line"></div>
+          <div class="filter-form__filter-option filter-option">
+            <label class="filter-option__label" for="$-0-50"><input class="filter-option__input" type="checkbox"
+                id="$-0-50" name="$-0-50"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 0-50</span>
+            </label>
+            <label class="filter-option__label" for="$-50-100"><input class="filter-option__input" type="checkbox"
+                id="$-50-100" name="$-50-100"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 50-100</span>
+            </label>
+            <label class="filter-option__label" for="$-100-150"><input class="filter-option__input" type="checkbox"
+                id="$-100-150" name="$-100-150"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 100-150</span>
+            </label>
+            <label class="filter-option__label" for="$-150-200"><input class="filter-option__input" type="checkbox"
+                id="$-150-200" name="$-150-200"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 150-200</span>
+            </label>
+            <label class="filter-option__label" for="$-200-250"><input class="filter-option__input" type="checkbox"
+                id="$-200-250" name="$-200-250"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 200-250</span>
+            </label>
+            <label class="filter-option__label" for="$-250-300"><input class="filter-option__input" type="checkbox"
+                id="$-250-300" name="$-250-300"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">$ 250-300</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-form__item">
+          <input class="filter-form__filter-input filter-input" type="checkbox" id="size" name="size">
+          <div class="filter-form__top">
+            <label class="filter-input__label" for="size"></label>
+            <span class="filter-form__filter-title filter-title">Size</span>
+            <svg class="filter-form__filter-arrow filter-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.293 8.30309L6.70011 12.896C6.31351 13.2826 6.31351 13.9094 6.70011 14.296C7.08671 14.6826 7.71351 14.6826 8.10011 14.296L12.0001 10.396L15.9001 14.296C16.2867 14.6826 16.9135 14.6826 17.3001 14.296C17.6867 13.9094 17.6867 13.2826 17.3001 12.896L12.7072 8.30309C12.3167 7.91257 11.6835 7.91257 11.293 8.30309Z"
+                fill="#4F4F4F" />
+            </svg>
+          </div>
+          <div class="filter-section__line"></div>
+          <div class="filter-form__filter-option filter-option">
+            <label class="filter-option__label" for="40-size"><input class="filter-option__input" type="checkbox"
+                id="40-size" name="40-size"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">40 size</span>
+            </label>
+            <label class="filter-option__label" for="41-size"><input class="filter-option__input" type="checkbox"
+                id="41-size" name="41-size"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">41 size</span>
+            </label>
+            <label class="filter-option__label" for="42-size"><input class="filter-option__input" type="checkbox"
+                id="42-size" name="42-size"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">42 size</span>
+            </label>
+            <label class="filter-option__label" for="43-size"><input class="filter-option__input" type="checkbox"
+                id="43-size" name="43-size"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">43 size</span>
+            </label>
+            <label class="filter-option__label" for="43-size"><input class="filter-option__input" type="checkbox"
+                id="43-size" name="43-size"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">43 size</span>
+            </label>
+            <label class="filter-option__label" for="45-size"><input class="filter-option__input" type="checkbox"
+                id="45-size" name="45-size"><span class="filter-option__button"><svg class="filter-option__icon"
+                  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0791 3.08752C12.307 3.31532 12.307 3.68467 12.0791 3.91248L5.66248 10.3291C5.43467 10.5569 5.06533 10.5569 4.83752 10.3291L1.92085 7.41248C1.69305 7.18467 1.69305 6.81532 1.92085 6.58752C2.14866 6.35971 2.51801 6.35971 2.74581 6.58752L5.25 9.09171L11.2542 3.08752C11.482 2.85971 11.8513 2.85971 12.0791 3.08752Z" />
+                </svg></span>
+              <span class="filter-option__text">45 size</span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="catalog-section">
+      <article class="catalog-section__card card">
+        <a href="#popup-dialog" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-1.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Nike React Infinity Run Flyknit 3 Mens</h2>
+            <p class="card__text">$159.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <dialog id="popup-dialog" class="card-popup__dialog">
+        <div class="card-popup">
+          <a class="card-popup__close img-close" href="#!"><svg class="img-close__item" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12Z" />
+            </svg></a>
+          <div class="card-popup__img-popup img-popup">
+            <img class="img-popup__content" src="img/Photo-cropp.png" alt="Photo sneackers">
+          </div>
+          <div class="card-popup__block">
+            <h2 class="card-popup__title">Nike React Infinity Run Flyknit 3 Mens</h2>
+            <h3 class="card-popup__price">$159.00</h3>
+            <form class="card-popup__rating rating">
+              <input class="rating__input star-input" name="star" data-variant="half" value="0.5" type="radio" />
+              <input class="rating__input star-input" name="star" data-variant="full" value="1" type="radio" />
+              <svg class="star-input__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="half">
+                    <stop offset="50%" stop-color="#FFC90A" />
+                    <stop offset="50%" stop-color="transparent" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+              </svg>
+              <input class="rating__input star-input" name="star" data-variant="half" value="1.5" type="radio" />
+              <input class="rating__input star-input" name="star" data-variant="full" value="2" type="radio" />
+              <svg class="star-input__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="half">
+                    <stop offset="50%" stop-color="#FFC90A" />
+                    <stop offset="50%" stop-color="transparent" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+              </svg>
+              <input class="rating__input star-input" name="star" data-variant="half" value="2.5" type="radio" />
+              <input class="rating__input star-input" name="star" data-variant="full" value="3" type="radio" />
+              <svg class="star-input__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="half">
+                    <stop offset="50%" stop-color="#FFC90A" />
+                    <stop offset="50%" stop-color="transparent" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+              </svg>
+              <input class="rating__input star-input" name="star" data-variant="half" value="3.5" type="radio" />
+              <input class="rating__input star-input" name="star" data-variant="full" value="4" type="radio" />
+              <svg class="star-input__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="half">
+                    <stop offset="50%" stop-color="#FFC90A" />
+                    <stop offset="50%" stop-color="transparent" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+              </svg>
+              <input class="rating__input star-input" name="star" data-variant="half" value="4.5" type="radio" />
+              <input class="rating__input star-input" name="star" data-variant="full" value="5" type="radio" />
+              <svg class="star-input__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="half">
+                    <stop offset="50%" stop-color="#FFC90A" />
+                    <stop offset="50%" stop-color="transparent" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+              </svg>
+            </form>
+            <p class="card-popup__text">Treat your feet to the comfort they deserve with the Nike React Infinity Run
+              Flyknit 3. This
+              latest addition grants a soft and stable ride over any distance through it's unique rocker design, shaped
+              to
+              support all 3 phases of your stride. </p>
+            <form class="card-popup__form form" action="" method="">
+              <div class="form__size radio-size">
+                <div class="radio-size__title">Size:</div>
+                <label class="radio-size__label" for="size-1"><input class="radio-size__input" id="size-1" type="radio"
+                    name="size" value="41"></span><span class="radio-size__text">41</span>
+                </label>
+                <label class="radio-size__label" for="size-2"><input class="radio-size__input" id="size-2" type="radio"
+                    name="size" value="42"></span><span class="radio-size__text">42</span>
+                </label>
+                <label class="radio-size__label" for="size-3"><input class="radio-size__input" id="size-3" type="radio"
+                    name="size" value="43"></span><span class="radio-size__text">43</span>
+                </label>
+                <label class="radio-size__label" for="size-4"><input class="radio-size__input" id="size-4" type="radio"
+                    name="size" value="44" disabled></span><span class="radio-size__text">44</span>
+                </label>
+                <label class="radio-size__label" for="size-5"><input class="radio-size__input" id="size-5" type="radio"
+                    name="size" value="45"></span><span class="radio-size__text">45</span>
+                </label>
+              </div>
+              <div class="form__color radio-colour">
+                <div class="radio-colour__title">Colour:</div>
+                <label class="radio-colour__label" for="colour-1"><input class="radio-colour__input" id="colour-1"
+                    type="radio" name="colour" value="green"><span class="radio-colour__border"></span>
+                </label>
+                <label class="radio-colour__label" for="colour-2"><input class="radio-colour__input" id="colour-2"
+                    type="radio" name="colour" value="red"><span class="radio-colour__border"></span>
+                </label>
+              </div>
+              <div class="form-popup__buttons">
+                <button class="form-popup__button button-popup button-popup__buy" type="submit">Buy now</button>
+                <button class="form-popup__button button-popup button-popup__add" type="button">Add to cart</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-2.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Nike Air Max 270 Flyknit Chaussure</h2>
+            <p class="card__text">$169.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-3.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Running | Femme Nike Air Max 27</h2>
+            <p class="card__text">$159.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-4.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">NIKE Revolution 5</h2>
+            <p class="card__text">$159.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-5.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Nike AIR MAX 2090 </h2>
+            <p class="card__text">$179.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-6.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Nike Air Max 270 Bowfin</h2>
+            <p class="card__text">$169.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-7.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Blanc Air Max 270 Chaussures. Nike</h2>
+            <p class="card__text">$179.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Nike Air Max Fury Men</h2>
+            <p class="card__text">$179.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+            </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <article class="catalog-section__card card">
+        <a href="" class="card__link">
+          <div class="card__container">
+            <div class="card__img img" href=""><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
+            <h2 class="Card__title">Nike Air Max Fury Men</h2>
+            <p class="card__text">$179.00</p>
+            <div class="card__rating rating">
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+            </div>
+          </div>
+          </div>
+        </a>
+        <form class="card__form form card__container" action="">
+          <button class="form__button button" type="button">Add to cart</button>
+        </form>
+      </article>
+
+      <div class="card__show-more show-more">
+        <button type="button" class="show-more__item">Show more</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <div class="footer__logo">
+        <div class="footer__logo--background"><a class="logo" href="/"><img class="logo__item"
+              src="img/running-shoes-logo.png" alt="running-shoes-logo"></div></a>
+      </div>
+      <div class="footer__contact">
+        <h3 class="footer__title">Contact us</h3>
+        <h3 class="footer__title">Wright us</h3>
+        <p>contact@runningshoes.com</p>
+        <h3 class="footer__title">Call us</h3>
+        <p>(800) 894 - 9688</p>
+      </div>
+      <div class="footer__shop-category">
+        <h3 class="footer__title">Shop by category</h3>
+        <a class="footer__text-link" href="">New collection</a>
+        <a class="footer__text-link" href="">For him</a>
+        <a class="footer__text-link" href="">For her</a>
+        <a class="footer__text-link" href="">For Kids</a>
+        <a class="footer__text-link" href="">Sale</a>
+      </div>
+      <div class="footer__useful-links">
+        <h3 class="footer__title">Useful links</h3>
+        <a class="footer__text-link" href="">My account </a>
+        <a class="footer__text-link" href="">Orders</a>
+        <a class="footer__text-link" href="">Checkout</a>
+        <a class="footer__text-link" href="">Cart</a>
+        <a class="footer__text-link" href="">Certificate of Analysis</a>
+      </div>
+      <div class="footer__feedback">
+        <div class="email-block">
+          <h3 class="footer__title">Keep up to data by joining our newsletter!</h3>
+          <form class="footer__email-form email-form" action="" method="">
+            <input class="email-form__input" type="email" placeholder="Your e–mail">
+            <button class="email-form__button" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="socnet-block">
+          <h3 class="footer__title">Follow Us On Instagram and Facebook!</h3>
+          <a class="footer__text-link footer__text-link--facebook" href="">facebook</a>
+          <a class="footer__text-link footer__text-link--instagram" href="">instagram</a>
+        </div>
+        <div class="website-block">
+          <h3 class="footer__title">Product and lifestyle photos by:</h3>
+          <a class="footer__text-link footer__text-link--website" href="">facebook</a>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <p class="footer__text">© Copyright 2020 – 2021 | Terms & Conditions – Privacy Policy – Return Policy – Disclaimer
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
