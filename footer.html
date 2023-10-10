@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <style>
+    :root {
+      --main-color: #BDE253;
+      --text-color: #333333;
+    }
+
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-heading {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-color);
+
+    }
+
+    .footer {
+      background-color: var(--main-color);
+      padding: 60px 64px 32px;
+    }
+
+    .footer__logo {
+      margin-bottom: 60px;
+    }
+
+    .footer__content {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .footer__column:nth-child(1) {
+      flex: 0 0 25%;
+    }
+
+    .footer__column:nth-child(2) {
+      flex: 0 0 15%;
+    }
+
+    .footer__column:nth-child(3) {
+      flex: 0 0 30%;
+    }
+
+    .footer__column:nth-child(4) {
+      flex: 0 0 30%;
+    }
+
+    .footer__section-heading {
+      margin-bottom: 38px;
+    }
+
+    .footer__form-heading {
+      margin-bottom: 20px;
+    }
+
+    .footer__subsection:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    .footer__subsection-heading {
+      margin-bottom: 14px;
+    }
+
+    .footer__link {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--text-color);
+    }
+
+    .footer__link--email {
+      text-decoration: underline;
+    }
+
+
+    .footer__link-list-item:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    .footer__form {
+      margin-bottom: 34px;
+    }
+
+    .logo {
+      display: block;
+      width: 180px;
+      height: 56px;
+      background-color: white;
+    }
+
+    .copyright {
+      width: 100%;
+      max-width: 70%;
+      margin: 0 auto;
+      padding-top: 26px;
+      border-top: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <footer class="footer">
+    <div class="container">
+      <span class="logo footer__logo"></span>
+      <div class="footer__content">
+        <div class="footer__column">
+          <p class="footer-heading footer__section-heading">Heading</p>
+          <div class="footer__subsection">
+            <p class="footer-heading footer__subsection-heading">Sub Heading</p>
+            <a class="footer__link footer__link--email"
+              href="mailto:contact@runningshoes.com">contact@runningshoes.com</a>
+          </div>
+          <div class="footer__subsection">
+            <p class="footer-heading footer__subsection-heading">Sub Heading</p>
+            <a class="footer__link"
+              href="tel:0677777777">0677777777</a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <p class="footer-heading footer__section-heading">Heading</p>
+          <ul class="footer__link-list">
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 1</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 2</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 3</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 4</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 5</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <p class="footer-heading footer__section-heading">Heading</p>
+          <ul class="footer__link-list">
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 1</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 2</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 3</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 4</a></li>
+            <li class="footer__link-list-item"><a href="" class="footer__link">Link 5</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <p class="footer-heading footer__form-heading">Heading</p>
+          <form class="footer__form">
+            <input type="text">
+          </form>
+          <div class="footer__subsection">
+            <p class="footer-heading footer__subsection-heading">Sub Heading</p>
+            <a class="footer__link"
+              href="tel:0677777777">0677777777</a>
+          </div>
+          <div class="footer__subsection">
+            <p class="footer-heading footer__subsection-heading">Sub Heading</p>
+            <a class="footer__link"
+              href="tel:0677777777">0677777777</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © Copyright 2020 – 2021 | Terms & Conditions – Privacy Policy – Return Policy – Disclaimer
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
