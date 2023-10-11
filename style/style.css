@@ -649,9 +649,9 @@ font-family: 'Rubik', sans-serif; */
 .footer__colomn {
   display: flex;
   flex-direction: column;
-  gap: 0 2rem;
+  /* gap: 0 2rem; */
   margin-bottom: 2.5rem;
-  flex: 1 1 calc(25% - 2rem);
+  flex: 1 1 25%;
 }
 
 .footer__subsection-row {
@@ -793,10 +793,6 @@ font-family: 'Rubik', sans-serif; */
 .card-popup__dialog:not(:target):not(.card__link) {
   display: none;
 }
-
-/* .card-popup__dialog:not(:target):not(.card__link) .card-popup {
-  display: none;
-} */
 
 /* .card-popup__dialog:target .card:nth-of-type(2) > .img__item {
   background-image: url(../img/image-2.png);
