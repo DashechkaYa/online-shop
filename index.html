@@ -17,23 +17,26 @@
 
 <body>
   <header class="header container">
-    <a class="logo" href="/"><img class="logo__item" src="img/running-shoes-logo.png" alt="running-shoes-logo"></a>
-    <nav class="navbar">
+    <div class="header__logo"><a class="logo" href="/"><img class="logo__item" src="img/running-shoes-logo.png"
+          alt="running-shoes-logo"></a></div>
+    <nav class="navbar header__navbar">
       <a class="navbar__link" href="">Home</a>
       <a class="navbar__link" href="">Shop</a>
       <a class="navbar__link" href="">About</a>
       <a class="navbar__link" href="">FAQ</a>
       <a class="navbar__link" href="">Contact</a>
     </nav>
-    <a class="basket-icon" href="#dialog"><svg class="basket-icon__item" viewBox="0 0 24 24" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M9.5822 21C10.1345 21 10.5822 20.5523 10.5822 20C10.5822 19.4477 10.1345 19 9.5822 19C9.02992 19 8.5822 19.4477 8.5822 20C8.5822 20.5523 9.02992 21 9.5822 21Z" />
-        <path
-          d="M20.0822 21C20.6345 21 21.0822 20.5523 21.0822 20C21.0822 19.4477 20.6345 19 20.0822 19C19.5299 19 19.0822 19.4477 19.0822 20C19.0822 20.5523 19.5299 21 20.0822 21Z" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M3.0822 2C2.52992 2 2.0822 2.44772 2.0822 3C2.0822 3.55228 2.52992 4 3.0822 4H5.26907L7.59935 15.1854C7.64375 15.4222 7.77164 15.6296 7.95129 15.7759C8.13112 15.9219 8.36026 16.0048 8.60118 16H20.2135C20.5315 16.0002 20.8398 15.8902 21.0858 15.6887C21.3318 15.4872 21.5003 15.2067 21.5628 14.8948C21.5646 14.8856 21.5663 14.8764 21.5679 14.8671L22.9767 6.62666C23.0128 6.43278 23.0068 6.23332 22.959 6.04185C22.9097 5.84438 22.8171 5.66032 22.6881 5.50297C22.559 5.34561 22.3966 5.21886 22.2126 5.13188C22.0288 5.045 21.828 4.99996 21.6247 5H7.52034L7.06118 2.79605C6.96457 2.33233 6.55588 2 6.0822 2H3.0822ZM7.93701 7L9.39534 14H19.6871L20.8839 7H7.93701Z" />
-      </svg></a>
+    <div class="header__basket">
+      <a class="basket-icon" href="#dialog"><svg class="basket-icon__item" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.5822 21C10.1345 21 10.5822 20.5523 10.5822 20C10.5822 19.4477 10.1345 19 9.5822 19C9.02992 19 8.5822 19.4477 8.5822 20C8.5822 20.5523 9.02992 21 9.5822 21Z" />
+          <path
+            d="M20.0822 21C20.6345 21 21.0822 20.5523 21.0822 20C21.0822 19.4477 20.6345 19 20.0822 19C19.5299 19 19.0822 19.4477 19.0822 20C19.0822 20.5523 19.5299 21 20.0822 21Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.0822 2C2.52992 2 2.0822 2.44772 2.0822 3C2.0822 3.55228 2.52992 4 3.0822 4H5.26907L7.59935 15.1854C7.64375 15.4222 7.77164 15.6296 7.95129 15.7759C8.13112 15.9219 8.36026 16.0048 8.60118 16H20.2135C20.5315 16.0002 20.8398 15.8902 21.0858 15.6887C21.3318 15.4872 21.5003 15.2067 21.5628 14.8948C21.5646 14.8856 21.5663 14.8764 21.5679 14.8671L22.9767 6.62666C23.0128 6.43278 23.0068 6.23332 22.959 6.04185C22.9097 5.84438 22.8171 5.66032 22.6881 5.50297C22.559 5.34561 22.3966 5.21886 22.2126 5.13188C22.0288 5.045 21.828 4.99996 21.6247 5H7.52034L7.06118 2.79605C6.96457 2.33233 6.55588 2 6.0822 2H3.0822ZM7.93701 7L9.39534 14H19.6871L20.8839 7H7.93701Z" />
+        </svg></a>
+    </div>
 
     <dialog id="dialog" class="bascket-card__dialog">
       <div class="bascket-card">
@@ -68,8 +71,13 @@
       <h1 class="main__title">Products</h1>
       <form class="main__search-form search-form" action="" method="">
         <input class="search-form__search-input search-input" type="text">
-        <button class="search-form__search-button search-button" type="button"><img src="img/search-loupe.svg"
-            alt="search-loupe"></button>
+        <button class="search-form__search-button search-button" type="button"><svg class="search-button__icon"
+            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.50037 3C5.7334 3 2.71706 5.75889 3.02103 9.60249C3.28858 12.9818 5.67612 16 9.50037 16C13.3261 16 15.7074 12.9798 15.9796 9.60438C16.2843 5.82132 13.2757 3 9.50037 3ZM9.50001 14C8.00001 14 5.00001 13.1 5.00001 9.5C5.00001 5.9 8.00001 5 9.50001 5C11.75 5 14 5.75 14 9.5C14 13.25 10.25 14 9.50001 14Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.4999 15.5C15.8904 15.1095 16.5236 15.1095 16.9141 15.5L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L15.4999 16.9142C15.1094 16.5237 15.1094 15.8905 15.4999 15.5Z" />
+          </svg></button>
       </form>
     </div>
 
@@ -268,15 +276,35 @@
       <article class="catalog-section__card card">
         <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-1.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-1.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike React Infinity Run Flyknit 3 Mens</h2>
             <p class="card__text">$159.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -408,17 +436,37 @@
       </dialog>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-2.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-2.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max 270 Flyknit Chaussure</h2>
             <p class="card__text">$169.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon rating__icon--empty" viewBox="0 0 16 16" fill="none"
+                  stroke="#FFC90A" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -428,17 +476,37 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-3.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-3.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Running | Femme Nike Air Max 27</h2>
             <p class="card__text">$159.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon rating__icon--empty" viewBox="0 0 16 16" fill="none"
+                  stroke="#FFC90A" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -448,17 +516,37 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-4.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-4.png" alt="sneackers-image"></div>
             <h2 class="Card__title">NIKE Revolution 5</h2>
             <p class="card__text">$159.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -468,17 +556,37 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-5.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-5.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike AIR MAX 2090 </h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-empty.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon rating__icon--empty" viewBox="0 0 16 16" fill="none"
+                  stroke="#FFC90A" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon rating__icon--empty" viewBox="0 0 16 16" fill="none"
+                  stroke="#FFC90A" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -488,17 +596,37 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-6.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-6.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max 270 Bowfin</h2>
             <p class="card__text">$169.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -508,17 +636,37 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-7.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-7.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Blanc Air Max 270 Chaussures. Nike</h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -528,17 +676,37 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max Fury Men</h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
         </a>
@@ -548,17 +716,37 @@
       </article>
 
       <article class="catalog-section__card card">
-        <a href="" class="card__link">
+        <a href="#popup-dialog" class="card__link">
           <div class="card__container">
-            <div class="card__img img" href=""><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
+            <div class="card__img img"><img class="img__item" src="img/image-8.png" alt="sneackers-image"></div>
             <h2 class="Card__title">Nike Air Max Fury Men</h2>
             <p class="card__text">$179.00</p>
             <div class="card__rating rating">
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
-              <div class="rating__item"><img class="rating__icon" src="img/bi_star-fill.png" alt="rating-star"></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
+              <div class="rating__item"><svg class="rating__icon" viewBox="0 0 16 16" fill="none" stroke="#FFC90A"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.829 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.611 15.443H3.612Z" />
+                </svg></div>
             </div>
           </div>
           </div>
@@ -569,7 +757,11 @@
       </article>
 
       <div class="card__show-more show-more">
-        <button type="button" class="show-more__item">Show more</button>
+        <button type="button" class="show-more__button">Show more<svg class="show-more__icon" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M13.6213 8.53857C13.2284 8.92669 13.2245 9.55985 13.6126 9.95276L14.894 11.25H6.75C6.19771 11.25 5.75 11.6977 5.75 12.25C5.75 12.8023 6.19771 13.25 6.75 13.25H14.8191L13.5377 14.5472C13.1495 14.9402 13.1534 15.5733 13.5463 15.9614C13.9392 16.3496 14.5724 16.3457 14.9605 15.9528L17.9614 12.9148C18.3462 12.5253 18.3462 11.8988 17.9614 11.5093L15.0355 8.54724C14.6473 8.15433 14.0142 8.15045 13.6213 8.53857Z" />
+          </svg></button>
       </div>
     </section>
   </main>
@@ -577,52 +769,83 @@
   <footer class="footer">
     <div class="container footer__wrapper">
       <div class="footer__logo">
-        <div class="footer__logo--background"><a class="logo" href="/"><img class="logo__item"
-              src="img/running-shoes-logo.png" alt="running-shoes-logo"></div></a>
+        <a class="footer__logo--background" href="/">
+          <div class="logo"><img class="logo__item" src="img/running-shoes-logo.png" alt="running-shoes-logo">
+          </div>
+        </a>
       </div>
-      <div class="footer__contact">
-        <h3 class="footer__title">Contact us</h3>
-        <h3 class="footer__title">Wright us</h3>
-        <p>contact@runningshoes.com</p>
-        <h3 class="footer__title">Call us</h3>
-        <p>(800) 894 - 9688</p>
+      <!-- <div> -->
+      <div class="footer__colomn">
+        <h3 class="footer__title footer__colomn-heading">Contact us</h3>
+        <div class="footer__subsection">
+          <h3 class="footer__title footer__subsection-heading">Wright us</h3>
+          <a class="footer__link footer__link--email"
+            href="mailto:contact@runningshoes.com">contact@runningshoes.com</a>
+        </div>
+        <div class="footer__subsection">
+          <h3 class="footer__title footer__subsection-heading">Call us</h3>
+          <a class="footer__link" href="tel:+38008949688">(800) 894 - 9688</a>
+        </div>
       </div>
-      <div class="footer__shop-category">
-        <h3 class="footer__title">Shop by category</h3>
-        <a class="footer__text-link" href="">New collection</a>
-        <a class="footer__text-link" href="">For him</a>
-        <a class="footer__text-link" href="">For her</a>
-        <a class="footer__text-link" href="">For Kids</a>
-        <a class="footer__text-link" href="">Sale</a>
+      <div class="footer__colomn">
+        <h3 class="footer__title footer__colomn-heading">Shop by category</h3>
+        <ul class="footer__link-list">
+          <li class="footer__link-list-item"><a href="" class="footer__link">New collection</a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">For him</a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">For her</a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">For Kids</a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">Sale</a></li>
+        </ul>
       </div>
-      <div class="footer__useful-links">
-        <h3 class="footer__title">Useful links</h3>
-        <a class="footer__text-link" href="">My account </a>
-        <a class="footer__text-link" href="">Orders</a>
-        <a class="footer__text-link" href="">Checkout</a>
-        <a class="footer__text-link" href="">Cart</a>
-        <a class="footer__text-link" href="">Certificate of Analysis</a>
+      <div class="footer__colomn">
+        <h3 class="footer__title footer__colomn-heading">Useful links</h3>
+        <ul class="footer__link-list">
+          <li class="footer__link-list-item"><a href="" class="footer__link">My account </a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">Orders</a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">Checkout</a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">Cart</a></li>
+          <li class="footer__link-list-item"><a href="" class="footer__link">Certificate of Analysis</a></li>
+        </ul>
       </div>
-      <div class="footer__feedback">
-        <div class="email-block">
-          <h3 class="footer__title">Keep up to data by joining our newsletter!</h3>
+      <div class="footer__colomn">
+        <div class="footer__subsection">
+          <h3 class="footer__title footer__subsection-heading--more-indent">Keep up to data by joining our newsletter!
+          </h3>
           <form class="footer__email-form email-form" action="" method="">
             <input class="email-form__input" type="email" placeholder="Your e–mail">
             <button class="email-form__button" type="submit">Subscribe</button>
           </form>
         </div>
-        <div class="socnet-block">
-          <h3 class="footer__title">Follow Us On Instagram and Facebook!</h3>
-          <a class="footer__text-link footer__text-link--facebook" href="">facebook</a>
-          <a class="footer__text-link footer__text-link--instagram" href="">instagram</a>
+        <div class="footer__subsection">
+          <h3 class="footer__title footer__subsection-heading">Follow Us On Instagram and Facebook!</h3>
+          <div class="footer__subsection-row">
+            <a class="footer__link footer__link--icon" href=""><svg class="footer__link-icon" viewBox="0 0 24 24"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14 13.5942V19H11.8007V13.5942L10.1839 13.589V11.4319L11.8007 11.4372V9.84817C11.8007 8.00389 12.9123 7 14.5389 7C15.3181 7 15.9881 7.05696 16.1839 7.08377V9.01309H15.0547C14.1705 9.01309 14 9.43824 14 10.0628V11.4372H16.1095L15.8349 13.5942H14Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M17 5H7C5.89543 5 5 5.89543 5 7V17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17V7C19 5.89543 18.1046 5 17 5ZM7 3C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3H7Z" />
+              </svg>facebook</a>
+            <a class="footer__link footer__link--icon" href=""><svg class="footer__link-icon" viewBox="0 0 24 24"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15 5H9C6.79086 5 5 6.79086 5 9V15C5 17.2091 6.79086 19 9 19H15C17.2091 19 19 17.2091 19 15V9C19 6.79086 17.2091 5 15 5ZM9 3C5.68629 3 3 5.68629 3 9V15C3 18.3137 5.68629 21 9 21H15C18.3137 21 21 18.3137 21 15V9C21 5.68629 18.3137 3 15 3H9ZM12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10ZM8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12ZM16.5 9C17.0523 9 17.5 8.55228 17.5 8C17.5 7.44772 17.0523 7 16.5 7C15.9477 7 15.5 7.44772 15.5 8C15.5 8.55228 15.9477 9 16.5 9Z" />
+              </svg>instagram</a>
+          </div>
         </div>
-        <div class="website-block">
-          <h3 class="footer__title">Product and lifestyle photos by:</h3>
-          <a class="footer__text-link footer__text-link--website" href="">facebook</a>
+        <div class="footer__subsection">
+          <h3 class="footer__title footer__subsection-heading">Product and lifestyle photos by:</h3>
+          <a class="footer__link footer__link--icon" href=""><svg class="footer__link-icon" viewBox="0 0 24 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.0004 1.40002C6.59638 1.40002 2.19998 5.79562 2.19998 11.2C2.19998 16.604 6.59638 21 12.0004 21C17.4044 21 21.8 16.604 21.8 11.2C21.8 5.79562 17.4044 1.40002 12.0004 1.40002ZM12.6999 2.92626C13.4691 3.20283 14.2219 3.93298 14.8485 5.0969C14.9912 5.36175 15.1244 5.64782 15.2485 5.95066C14.4543 6.12316 13.5974 6.23676 12.6999 6.27566V2.92626ZM11.3001 2.92642V6.27406C10.4029 6.23484 9.54571 6.12265 8.75163 5.95031C8.87569 5.6475 9.00897 5.36155 9.15147 5.09671C9.77803 3.93311 10.5308 3.20311 11.2999 2.92623L11.3001 2.92642ZM15.5617 3.58766C16.3839 3.97204 17.1332 4.48518 17.7834 5.10202C17.4225 5.2764 17.0282 5.43483 16.6084 5.57638C16.4492 5.17358 16.2735 4.79074 16.081 4.43326C15.9207 4.13545 15.7471 3.85278 15.5617 3.58762V3.58766ZM8.43887 3.58797C8.2534 3.85297 8.07996 4.13561 7.91967 4.43329C7.72717 4.79095 7.55123 5.17377 7.39202 5.57673C6.97218 5.43517 6.57794 5.27673 6.21718 5.10237C6.86734 4.48549 7.6167 3.97253 8.43875 3.58801L8.43887 3.58797ZM18.7441 6.18405C19.6544 7.40749 20.2389 8.88841 20.3711 10.4997H17.5853C17.5356 9.22121 17.3505 8.01073 17.0503 6.91137C17.6567 6.70794 18.2458 6.42401 18.7439 6.18401L18.7441 6.18405ZM5.25686 6.18452C5.77422 6.46171 6.34186 6.705 6.95078 6.91092C6.65047 8.01044 6.46546 9.22108 6.41562 10.4997H3.63014C3.76249 8.8886 4.3467 7.4078 5.25686 6.18448V6.18452ZM8.30187 7.29044C9.23923 7.50372 10.247 7.63607 11.3006 7.67685V10.4996L7.81767 10.4998C7.9072 9.38465 8.04939 8.23917 8.30203 7.29061L8.30187 7.29044ZM15.6991 7.2906C15.9625 8.26152 16.1334 9.34748 16.1834 10.4997H12.7003V7.67688C13.7541 7.6361 14.7619 7.50391 15.6992 7.29063L15.6991 7.2906ZM6.41546 11.8994C6.465 13.1733 6.64874 14.3794 6.94702 15.4758C6.3367 15.6824 5.76826 15.9272 5.24998 16.2056C4.34358 14.9841 3.62982 13.52 3.62982 11.9036L6.41546 11.8994ZM7.81735 11.8994H11.3005V14.7088C10.2456 14.7497 9.23655 14.882 8.29811 15.0958C8.03654 14.128 7.86703 13.0466 7.81731 11.8992L7.81735 11.8994ZM12.7001 11.8994H16.1834C16.1337 13.0468 15.9641 14.1282 15.7026 15.096C14.7643 14.8822 13.7551 14.7497 12.7003 14.7089L12.7001 11.8994ZM17.585 11.8994H20.3708C20.2389 13.5068 19.657 14.9842 18.7506 16.2058C18.2323 15.9274 17.6636 15.6827 17.0532 15.4758C17.3515 14.3796 17.5354 13.1733 17.585 11.8994ZM12.7001 16.1102C13.5997 16.1494 14.4583 16.2633 15.2541 16.4366C15.1286 16.7441 14.9934 17.0341 14.8489 17.3025C14.2222 18.4663 13.4695 19.1964 12.7003 19.4732L12.7001 16.1102ZM11.3003 16.1104V19.473C10.5311 19.1963 9.77827 18.4661 9.15187 17.3025C9.00733 17.0341 8.87218 16.7439 8.74671 16.4366C9.54235 16.2633 10.4011 16.1496 11.3005 16.1103L11.3003 16.1104ZM16.6131 16.811C17.035 16.9537 17.4309 17.1129 17.7931 17.2885C17.1406 17.9093 16.388 18.4256 15.5617 18.8118C15.7472 18.5466 15.9208 18.2638 16.0812 17.9659C16.2756 17.6048 16.4528 17.2181 16.6133 16.8109L16.6131 16.811ZM7.38751 16.8112C7.54782 17.2184 7.72516 17.6051 7.91955 17.966C8.07986 18.2638 8.25345 18.5465 8.43891 18.8116C7.61282 18.4255 6.86014 17.9093 6.20782 17.2887C6.56986 17.1132 6.96579 16.9537 7.38751 16.8112Z" />
+            </svg>runningshoes.com</a>
         </div>
       </div>
+      <!-- </div> -->
       <div class="footer__line"></div>
-      <p class="footer__text">© Copyright 2020 – 2021 | Terms & Conditions – Privacy Policy – Return Policy – Disclaimer
+      <p class="footer__text-note">© Copyright 2020 – 2021 | Terms & Conditions – Privacy Policy – Return Policy –
+        Disclaimer
       </p>
     </div>
   </footer>
