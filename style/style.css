@@ -53,7 +53,7 @@ font-family: 'Rubik', sans-serif; */
   padding-top: 33px;
   padding-bottom: 33px;
   display: flex;
-  /* justify-content: space-between; */
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 }
@@ -72,6 +72,13 @@ font-family: 'Rubik', sans-serif; */
 .logo__item {
   width: inherit;
   height: inherit;
+}
+
+@media screen and (max-width: 799px) {
+  .logo {
+    width: 108.9px;
+    height: 15.8px;
+  }
 }
 
 .header__navbar {
@@ -95,6 +102,39 @@ font-family: 'Rubik', sans-serif; */
 
 .navbar__link:hover {
   border-color: #424242;
+}
+
+@media screen and (max-width: 799px) {
+  .header__navbar {
+    order: 3;
+  }
+
+  .navbar {
+    background-color: #d4ee8c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* @media screen and (max-width: 781px) {
+  .header__navbar {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    background-color: #d4ee8c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+} */
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    gap: 1rem;
+    justify-content: space-around;
+  }
 }
 
 .header__basket {
@@ -247,6 +287,12 @@ font-family: 'Rubik', sans-serif; */
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 701px) {
+  .main {
+    justify-content: center;
+  }
+}
+
 .main__top {
   flex: 0 0 100%;
   display: flex;
@@ -254,6 +300,14 @@ font-family: 'Rubik', sans-serif; */
   align-items: center;
   gap: 3.2rem;
   margin-bottom: 4.8rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 620px) {
+  .main__top {
+    gap: 2rem 6rem;
+    justify-content: center;
+  }
 }
 
 .main__title {
@@ -263,6 +317,12 @@ font-family: 'Rubik', sans-serif; */
   line-height: 130%;
 }
 
+@media screen and (max-width: 760px) {
+  .main__title {
+    font-size: 4rem;
+  }
+}
+
 .main__search-form {
   position: relative;
 }
@@ -270,6 +330,7 @@ font-family: 'Rubik', sans-serif; */
 .search-form {
   width: 100%;
   max-width: 336px;
+  flex-shrink: 1;
 }
 
 .search-form__search-input {
@@ -315,7 +376,13 @@ font-family: 'Rubik', sans-serif; */
 
 .filter-section {
   flex: 1 1 16.5%;
-  max-width: 220px;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 760px) {
+  .filter-section {
+    margin-bottom: 5rem;
+  }
 }
 
 .filter-form {
@@ -332,8 +399,9 @@ font-family: 'Rubik', sans-serif; */
   display: flex;
   justify-content: space-between;
   position: relative;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   position: relative;
+  z-index: 1;
 }
 
 .filter-input:focus-visible ~ .filter-form__top {
@@ -406,11 +474,16 @@ font-family: 'Rubik', sans-serif; */
   background-color: #e0e0e0;
   height: 1px;
   flex: 0 0 100%;
-  /* margin-bottom: 2rem; */
 }
 
 .filter-form__item:not(:last-of-type) {
   margin-bottom: 5.6rem;
+}
+
+@media screen and (max-width: 760px) {
+  .filter-form__item:not(:last-of-type) {
+    margin-bottom: 3rem;
+  }
 }
 
 .filter-option {
@@ -475,6 +548,7 @@ font-family: 'Rubik', sans-serif; */
 
 .catalog-section {
   flex: 1 1 78.6%;
+  width: 100%;
   max-width: 1048px;
   display: flex;
   flex-wrap: wrap;
@@ -482,7 +556,7 @@ font-family: 'Rubik', sans-serif; */
 }
 
 .catalog-section__card {
-  flex: 0 1 calc(33.3% - 2rem);
+  flex: 1 1 calc(33.3% - 2rem);
 }
 
 .card {
@@ -492,6 +566,18 @@ font-family: 'Rubik', sans-serif; */
   box-shadow: 0px 2px 20px 0px #cacaca33;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 760px) {
+  .catalog-section__card:last-of-type {
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .catalog-section__card:last-of-type {
+    max-width: 100%;
+  }
 }
 
 .card__link {
@@ -628,13 +714,20 @@ font-family: 'Rubik', sans-serif; */
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-top: 6rem;
 }
 
 .footer__logo {
   flex: 1 1 100%;
   margin-bottom: 4.4rem;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__logo--background {
@@ -644,6 +737,57 @@ font-family: 'Rubik', sans-serif; */
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__logo--background {
+  }
+}
+
+.footer__content {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer__colomn:nth-child(1) {
+  flex: 1 1 25%;
+}
+
+.footer__colomn:nth-child(2) {
+  flex: 1 1 15%;
+}
+
+.footer__colomn:nth-child(3) {
+  flex: 1 1 25%;
+}
+
+.footer__colomn:nth-child(4) {
+  flex: 1 1 30%;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__content {
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .footer__colomn:nth-child(1) {
+    flex: 1 1 100%;
+  }
+
+  .footer__colomn:nth-child(2) {
+    flex: 1 1 45%;
+  }
+
+  .footer__colomn:nth-child(3) {
+    flex: 1 1 45%;
+  }
+
+  .footer__colomn:nth-child(4) {
+    flex: 1 1 100%;
+  }
 }
 
 .footer__colomn {
@@ -658,6 +802,13 @@ font-family: 'Rubik', sans-serif; */
   display: flex;
   gap: 5rem;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__subsection-row {
+    justify-content: center;
+  }
 }
 
 .footer__title {
@@ -720,9 +871,17 @@ font-family: 'Rubik', sans-serif; */
 }
 
 .footer__email-form {
+  flex-shrink: 1;
   width: 100%;
-  display: inline-flex;
+  display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__email-form {
+    justify-content: center;
+  }
 }
 
 .email-form__input {
@@ -731,9 +890,8 @@ font-family: 'Rubik', sans-serif; */
   background: #f7ffdf;
   height: 44px;
   padding: 0 1.2rem;
-  width: 100%;
   max-width: 260px;
-  flex-shrink: 0;
+  flex: 1 1 100%;
 }
 
 .email-form__input::placeholder {
@@ -754,6 +912,7 @@ font-family: 'Rubik', sans-serif; */
   font-weight: 400;
   line-height: 130%;
   cursor: pointer;
+  flex-shrink: 1;
 }
 
 .footer__line {
@@ -790,13 +949,9 @@ font-family: 'Rubik', sans-serif; */
   animation: blurIn 0.2s ease both;
 }
 
-.card-popup__dialog:not(:target):not(.card__link) {
+.card-popup__dialog:not(:target) {
   display: none;
 }
-
-/* .card-popup__dialog:target .card:nth-of-type(2) > .img__item {
-  background-image: url(../img/image-2.png);
-} */
 
 .card-popup__close {
   position: absolute;
