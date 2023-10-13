@@ -953,12 +953,6 @@ font-family: 'Rubik', sans-serif; */
   display: none;
 }
 
-.card-popup__close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-
 .card-popup {
   position: fixed;
   z-index: 3;
@@ -974,7 +968,22 @@ font-family: 'Rubik', sans-serif; */
 @media screen and (max-width: 760px) {
   .card-popup {
     flex-direction: column;
-    padding: 2rem 1.6rem;
+    padding: 5rem 1.6rem;
+    max-height: 100vh;
+    margin: 10px 0;
+    overflow: scroll;
+  }
+}
+
+.card-popup__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+@media screen and (max-width: 760px) {
+  .card-popup__close {
+    top: 15px;
   }
 }
 
