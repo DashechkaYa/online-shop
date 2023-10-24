@@ -287,7 +287,7 @@ font-family: 'Rubik', sans-serif; */
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 701px) {
+@media screen and (max-width: 798px) {
   .main {
     justify-content: center;
   }
@@ -376,10 +376,10 @@ font-family: 'Rubik', sans-serif; */
 
 .filter-section {
   flex: 1 1 16.5%;
-  max-width: 80%;
+  max-width: 70%;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 798px) {
   .filter-section {
     margin-bottom: 5rem;
   }
@@ -390,8 +390,16 @@ font-family: 'Rubik', sans-serif; */
   flex-wrap: wrap;
 }
 
+@media (max-width: 798px) and (min-width: 605px) {
+  .filter-form {
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+}
+
 .filter-form__item {
   width: 100%;
+  min-width: 132px;
 }
 
 .filter-form__top {
@@ -480,7 +488,7 @@ font-family: 'Rubik', sans-serif; */
   margin-bottom: 5.6rem;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 798px) {
   .filter-form__item:not(:last-of-type) {
     margin-bottom: 3rem;
   }
@@ -556,7 +564,8 @@ font-family: 'Rubik', sans-serif; */
 }
 
 .catalog-section__card {
-  flex: 1 1 calc(33.3% - 2rem);
+  flex: 1 1 calc(33.3% - 1.333rem);
+  min-width: 210px;
 }
 
 .card {
@@ -574,7 +583,7 @@ font-family: 'Rubik', sans-serif; */
   }
 }
 
-@media screen and (max-width: 371px) {
+@media screen and (max-width: 471px) {
   .catalog-section__card:last-of-type {
     max-width: 100%;
   }
