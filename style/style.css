@@ -564,8 +564,14 @@ font-family: 'Rubik', sans-serif; */
 }
 
 .catalog-section__card {
-  flex: 1 1 calc(33.3% - 1.333rem);
-  min-width: 210px;
+  flex: 1 1 250px;
+  max-width: calc(50% - 1rem);
+}
+
+@media screen and (max-width: 500px) {
+  .catalog-section__card {
+    max-width: 100%;
+  }
 }
 
 .card {
@@ -576,18 +582,18 @@ font-family: 'Rubik', sans-serif; */
   display: flex;
   flex-direction: column;
 }
-
+/* 
 @media screen and (max-width: 760px) {
   .catalog-section__card:last-of-type {
-    max-width: calc(50% - 1rem);
+    flex-basis: calc(50% - 1rem);
   }
 }
 
 @media screen and (max-width: 471px) {
   .catalog-section__card:last-of-type {
-    max-width: 100%;
+    flex-basis: 100%;
   }
-}
+} */
 
 .card__link {
   text-decoration: none;
