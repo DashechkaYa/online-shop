@@ -582,18 +582,6 @@ font-family: 'Rubik', sans-serif; */
   display: flex;
   flex-direction: column;
 }
-/* 
-@media screen and (max-width: 760px) {
-  .catalog-section__card:last-of-type {
-    flex-basis: calc(50% - 1rem);
-  }
-}
-
-@media screen and (max-width: 471px) {
-  .catalog-section__card:last-of-type {
-    flex-basis: 100%;
-  }
-} */
 
 .card__link {
   text-decoration: none;
